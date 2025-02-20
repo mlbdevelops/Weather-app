@@ -1,5 +1,3 @@
-
-
 const apiKey = "7aa697c4fa5a20f5dd927c3b18bd638a";
 
 async function fetchWeather() {
@@ -78,7 +76,7 @@ async function fetchWeather() {
 
 
 document.getElementById('fb').addEventListener("click", function() {
-    window.location.href = 'https://facebook.com/mlb_loriginal'
+    window.location.href = 'https://www.facebook.com/mlb.loriginal'
 })
 document.getElementById('insta').addEventListener("click", function() {
   window.location.href = 'https://www.instagram.com/mlb_loriginal/'
