@@ -75,3 +75,10 @@ async function fetchWeather() {
     weatherContainer.innerHTML = `<p>Weather data not available. Please try another city.</p>`;
   }
 }
+
+
+document.getElementById('fb').addEventListener('click', function() {
+    window.location.href = 'https://facebook.com/mlb_loriginal'
+})
+document.getElementById('insta')
+document.getElementById('wsp')
