@@ -77,8 +77,9 @@ async function fetchWeather() {
 }
 
 
-document.getElementById('fb').addEventListener('click', function() {
+document.getElementById('fb').addEventListener("click", function() {
     window.location.href = 'https://facebook.com/mlb_loriginal'
 })
-document.getElementById('insta')
-document.getElementById('wsp')
+document.getElementById('insta').addEventListener("click", function() {
+  window.location.href = 'https://www.instagram.com/mlb_loriginal/'
+})
