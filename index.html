@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="css/all.min.css" type="text/css" media="all" />
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Weather App</h1>
+        <div class="searchw">
+          <input type="text" id="city-input" placeholder="Enter city name">
+          <i onclick="fetchWeather()" class="fa fa-search" ></i>
+        </div>
+            <p id="txt" >Enter a city to get the weather. </p>
+        <div style="display:none" id="weather">
+            
+            <i style="display:none" class="fa fa-cloud" id="cloud"></i>
+            <i style="display:none" class="fa fa-sun" id="sun"></i>
+            <i style="display:none" class="fa fa-cloud-rain" id="rain"></i>
+            <i style="display:none" id="smog" class="fas fa-smog"></i>
+            
+            <div class="name">
+              <span style="display: none" id="cityName" >New york</span>
+              <h1 style="display:none" id="temp" >2°C</h1>
+            </div>
+            <div class="w">
+              <div class="humidity">
+                <p id="humi" style="display:none" >humidity <i class="fas fa-tint"></i> </p>
+                <span style="display:none" id="humidity" >40%</span>
+              </div>
+              <div  class="speed">
+                <p id="speed" style="display:none" >wind speed <i class="fa fa-wind" ></i> </p>
+                <span style="display:none" id="windsp" >10.29 km/h</span>
+              </div>
+              
+            </div>
+        </div>
+    </div>
+    <footer>
+        <h4>contact me</h4>
+        <div class="socials">
+          <img src="assets/fb.jpg" height="25" width="25" alt="Facebook logo" id="fb" />
+          <img src="assets/download.png" height="25" width="25" alt="Instagram logo" id="insta" />
+          <img src="assets/whatsapp.png" height="25" width="25" alt="whatsapp logo" id="wsp" />
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

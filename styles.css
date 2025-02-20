@@ -1,0 +1,221 @@
+*{
+  transition: 0.4s;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+    color: #fff;
+
+}
+
+.searchw{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.searchw i {
+  color: black;
+  padding: 11px;
+  border-radius: 50px;
+  background-color: #FFF;
+  margin-bottom: 9px;
+  margin-left: 5px;
+  cursor: pointer;
+}
+
+.container {
+    text-align: center;
+    padding: 10px 10px 35px 10px;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    width: 100%;
+    max-width: 500px;
+    backdrop-filter: blur(15px);
+    transition: 0.8s;
+}
+
+h1 {
+    margin: 25px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.name{
+  height: 200px;
+  display: column;
+  place-items: center;
+  place-content: center;
+}
+
+.name h1 {
+  font-size: 50px;
+  margin: 30px;
+}
+
+.name span{
+  font-size: 30px;
+  margin: 30px 0 30px 0;
+}
+
+.w{
+  display: flex;
+  justify-content: space-around;
+}
+
+.w span{
+  font-size: 30px;
+}
+
+input[type="text"] {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 50px;
+    width: 260px;
+    font-size: 1em;
+    outline: none;
+    transition: 0.3s;
+}
+
+input[type="text"]:focus{
+  border: 1px solid blue;
+}
+
+#weather p {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+#weather #cloud{
+  font-size: 50px;
+  margin-top: 10px;
+  color: white;
+}
+
+#weather #rain{
+  font-size: 50px;
+  margin-top: 10px;
+  color: white;
+}
+
+#weather #sun{
+  font-size: 50px;
+  margin-top: 10px;
+  color: white;
+}
+
+#weather #smog{
+  font-size: 50px;
+  margin-top: 10px;
+  color: white;
+}
+
+footer{
+  bottom: 9px;
+  left: 9px;
+  position: fixed;
+  height: 70px;
+  width: 150px;
+  background-color: white;
+  border-radius: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+footer h4{
+  color: black;
+  margin: 0;
+}
+
+
+footer img{
+  margin: 5px;
+  border-radius: 50px;
+}
+
+.socials {
+  display: flex;
+}
+
+
+#wsp{
+  border-radius: 0;
+}
+
+
+@media (max-width: 600px) {
+    .container {
+        width: 90%;
+        max-width: 350px;
+    }
+}
+
+@media (max-width: 400px) {
+    .container {
+        width: 90%;
+        max-width: 350px;
+    }
+
+    h1 {
+        font-size: 1.5em;
+    }
+
+    #weather p {
+        font-size: 1em;
+    }
+}
+
+
+@media (min-width: 1000px){
+      footer{
+      bottom: 9px;
+      left: 9px;
+      position: fixed;
+      height: 100px;
+      width: 250px;
+      background-color: white;
+      border-radius: 50px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    
+    footer h4{
+      color: black;
+      margin: 5px;
+      font-size: 20px;
+    }
+    
+    
+    footer img{
+      margin: 5px;
+      border-radius: 50px;
+      height: 50px;
+      width: 50px;
+    }
+    
+    .socials {
+      display: flex;
+    }
+    
+    .container {
+      text-align: center;
+      padding: 15px 15px 40px 15px;
+      background-color: rgba(0, 0, 0, 0.3);
+      border-radius: 20px;
+      width: 100%;
+      max-width: 500px;
+      backdrop-filter: blur(15px);
+    }
+}
