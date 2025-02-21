@@ -12,6 +12,7 @@ async function fetchWeather() {
     const speed = document.getElementById('speed');
     const txt = document.getElementById('txt');
     const smog = document.getElementById('smog');
+    const err = document.getElementById('error');
     
     const city = document.getElementById('city-input').value;
     const apiUrl = `https://api.openweathermap.org/data/2.5/weather?units=metric&q=${city}&appid=${apiKey}`;
