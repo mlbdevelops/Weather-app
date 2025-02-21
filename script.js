@@ -67,10 +67,14 @@ async function fetchWeather() {
         sun.style.display = 'none';
         rain.style.display = 'none';
       }
+
+        err.style.display = 'none';
       
       
     } else {
-    weatherContainer.innerHTML = `<p>Weather data not available. Please try another city.</p>`;
+      weatherContainer.style.display = 'none';
+      err.style.display = 'block';
+    return;
   }
 }
 
