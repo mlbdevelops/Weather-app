@@ -74,6 +74,7 @@ async function fetchWeather() {
     } else {
       weatherContainer.style.display = 'none';
       err.style.display = 'block';
+      txt.style.display = 'none';
   }
 }
 
