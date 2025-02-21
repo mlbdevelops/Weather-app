@@ -69,12 +69,10 @@ async function fetchWeather() {
       }
 
         err.style.display = 'none';
-      
-      
+        
     } else {
       weatherContainer.style.display = 'none';
       err.style.display = 'block';
-    return;
   }
 }
 
