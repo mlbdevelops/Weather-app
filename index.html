@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather App</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="css/all.min.css" type="text/css" media="all" />
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -12,29 +12,44 @@
         <h1>Weather App</h1>
         <div class="searchw">
           <input type="text" id="city-input" placeholder="Enter city name">
-          <i onclick="fetchWeather()" class="fa fa-search" ></i>
+          <i id="fetcher" onclick="fetchWeather()" class="fa fa-search" ></i>
         </div>
             <p id="txt" >Enter a city to get the weather. </p>
             <p id="error" style="display:none;" >Weather data not available. Please try another city.</p>
-        <div style="display:none" id="weather">
-            
-            <i style="display:none" class="fa fa-cloud" id="cloud"></i>
-            <i style="display:none" class="fa fa-sun" id="sun"></i>
-            <i style="display:none" class="fa fa-cloud-rain" id="rain"></i>
-            <i style="display:none" id="smog" class="fas fa-smog"></i>
+        <div  id="weather">
             
             <div class="name">
-              <span style="display: none" id="cityName" >New york</span>
-              <h1 style="display:none" id="temp" >2°C</h1>
+              <span style="display:none;"  id="cityName" >New york</span>
+              <span style="display:none;" id="hour">hour</span>
             </div>
-            <div class="w">
-              <div class="humidity">
-                <p id="humi" style="display:none" >humidity <i class="fas fa-tint"></i> </p>
-                <span style="display:none" id="humidity" >40%</span>
+            <div class="weatherContainer">
+              <div class="rate">
+                <h1 style="display:none"  id="temp" >2°C</h1>
+                <h2 style="display:none" id="high" >high:30°C</h2>
+                <h2 style="display:none" id="low" >low:10°C</h2>
               </div>
-              <div  class="speed">
-                <p id="speed" style="display:none" >wind speed <i class="fa fa-wind" ></i> </p>
-                <span style="display:none" id="windsp" >10.29 km/h</span>
+              <div class="icons">
+                <i style="display:none"  class="fa fa-cloud" id="cloud"></i>
+                <i style="display:none" class="fa fa-sun" id="sun"></i>
+                <i style="display:none" class="fa fa-cloud-rain" id="rain"></i>
+                <i style="display:none" id="smog" class="fas fa-smog"></i>
+                <span style="display:none" id="fl">feels like: 20°C</span>
+              </div>
+            </div>
+            
+            <div class="info">
+              <span style="display:none" id="press">pressure: 24</span>
+              <span style="display:none" id="sl" >sea level: 1068</span>
+            </div>
+            
+            <div id="w" class="w">
+              <div style="display:none;" id="humi" class="humidity">
+                <p   >humidity <i class="fas fa-tint"></i> </p>
+                <span  id="humidity" >40%</span>
+              </div>
+              <div style="display:none;" id="speed"  class="speed">
+                <p  >wind speed <i class="fa fa-wind" ></i> </p>
+                <span  id="windsp" >10.29 km/h</span>
               </div>
               
             </div>
@@ -43,10 +58,11 @@
     <footer>
         <h4>contact me</h4>
         <div class="socials">
-          <img src="fb.jpg" height="25" width="25" alt="Facebook logo" id="fb" />
-          <img src="download.png" height="25" width="25" alt="Instagram logo" id="insta" />
+          <img href="https://www.facebook.com/mlb.mbula" src="assets/fb.jpg" height="25" width="25" alt="Facebook logo" id="fb" />
+          <img src="assets/download.png" height="25" width="25" alt="Instagram logo" id="insta" />
         </div>
     </footer>
     <script src="script.js"></script>
+    
 </body>
 </html>
