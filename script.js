@@ -43,8 +43,8 @@ async function fetchWeather() {
       press.textContent = `Pressure: ${data.main.pressure}`;
       sl.textContent = `Sea Level: ${data.main.sea_level}`;
       
-      high.textContent = `High: ${data.main.temp_max}`;
-      low.textContent = `Low: ${data.main.temp_min}`;
+      high.textContent = `High: ${Math.round(data.main.temp_max)}°C`;
+      low.textContent = `Low: ${Math.round(data.main.temp_min)}°C`;
       
       low.style.display = 'block'
       high.style.display = 'block'
