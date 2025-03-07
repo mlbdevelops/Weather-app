@@ -38,7 +38,7 @@ async function fetchWeather() {
       
       hour.textContent = `${data.weather[0].description}`
       
-      fl.textContent = `Feels like: ${data.main.feels_like}`
+      fl.textContent = `Feels like: ${Math.round(data.main.feels_like)}°C`
       
       press.textContent = `Pressure: ${data.main.pressure}`;
       sl.textContent = `Sea Level: ${data.main.sea_level}`;
