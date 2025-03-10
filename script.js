@@ -33,6 +33,8 @@ async function fetchWeather() {
    
     const weatherContainer = document.getElementById('weather');
     if (data.cod === 200) {
+
+      city.textContent = ''
       
       const date = new Date(`${city}`);
       
